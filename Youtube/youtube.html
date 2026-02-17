@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    
+    <style>
+      body{
+        background-color: #0f0f0f;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        /* grid-template-columns: repeat(3, auto); */
+        /* grid-auto-rows: 400px; */
+        /* grid-template-rows: repeat(2, auto); */
+        background-color: #0f0f0f;
+        /* #0f0f0f → navbar + sidebar */
+        gap: 5px;
+        padding: 5px;
+        margin: 0 auto;
+        grid-auto-flow: dense;
+        /* width: 1230px; */
+      }
+      .div1 {
+        /* background-color: gold; */
+        /* display: block; */
+        padding: 10px;
+      }
+      .video-text {
+        /* background-color: blue; */
+        padding: 5px;
+        border-radius: 15px;
+      }
+      .video iframe{
+        border-radius: 15px;
+        /* padding: auto; */
+        width: 400px;
+        height: 250px;
+        
+      }
+      .video-text:hover {
+        background-color: rgb(30, 28, 28); /* Color when hovered */
+      }
+      .title, h4{
+        color:white;
+        line-height: 1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button{
+        /* width:100vw; */
+        padding: 10px;
+        background-color: rgb(31, 28, 28);
+        /* background-color: rgb(15, 15, 15, 0.1); */
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+      }
+      .button-bg{
+        /* background-color: black; */
+        background-color: #0f0f0f;
+        /* display: flex; */
+        width:90vw;
+        
+        
+      }
+      .button-bg ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+
+      }
+      .search-box{
+      background-color: #0f0f0f;
+
+      }
+      input[type="search"]{
+        width:100%
+      }
+      .main-container{
+        display: flex;
+        background-color: #0f0f0f;
+        padding-top: 5px;
+      }
+      /* .right-box{
+        margin-left: 20px;
+      } */
+      /* .left-box{
+        background-color: #0f0f0f;
+      } */
+      .left-box ul{
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+      }
+      .v-details{
+        display: flex;
+      }
+      .left-author-logo img {
+        border-radius: 50%;
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-box">
+        <ul>
+          <li>Home</li>
+          <li>Shorts</li>
+          <li>Subscription</li>
+          <li>You</li>
+          <li>History</li>
+          <li>Music</li>
+          <li>Gaming</li>
+          <li>Sports</li>
+          <li>Youtube Premium</li>
+          <li>Youtube Music</li>
+          <li>Youtube Kids</li>
+        </ul>
+
+      </div>
+      
+      
+      <div class="right-box">
+
+    
+    <div class="search-box"><input type="Search" placeholder="Search" maxlength="1220px" /></div>
+    <div class="button-bg">
+    <ul>
+      <li><button type="button">SAMPLE BUTTON</button></li>
+      <li><button type="button">SAMPLE BUTTON</button></li>
+      <li><button type="button">SAMPLE BUTTON</button></li>
+      <li><button type="button">SAMPLE BUTTON</button></li>
+      <li><button type="button">SAMPLE BUTTON</button></li>
+    </ul>
+    
+    </div>
+    <div class="container">
+      <div class="div1">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/Ds58w7uZfsA?si=nCniWnvjyheGjGjQ"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/ogeere.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>OGEERE - STARRING OLOLADE EBONG,DAMOLA OLTUNJI,WALOLA</h4>
+            <small class="title">Speed Films TV</small><br>
+            <small class="title">110k views. 8 hours ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second cell starts -->
+       <div class="div2">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/lU1Y7Lc4Pwo?si=Qkkl3ji-GyEhCqnX"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/october1.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>OCTOBER 1 - Nigerian Movies 2025 Latest Full Movies</h4>
+            <small class="title">KAP STREAM</small><br>
+            <small class="title">376k views. 4 months ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div3">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/2kj5cLZ8SfE?si=ln78Sa9TTv9RRrfp"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/remote.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>PASTOR REMOTE WAS CALLED FOR A BATTLE ft: LALUDE | PRETTY FOLA 🤣🤣🤣</h4>
+            <small class="title">Iamremote Tv</small><br>
+            <small class="title">219k views. 9 months ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div4">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/4lHAyiUuckY?si=b5_jxE9oEIfAotcg"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/agentg9.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>Scammers React After I Turn ON Their Webcam!</h4>
+            <small class="title">Agent G9</small><br>
+            <small class="title">7.2M views. 1 year ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div5">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/OKa5q8DTy8U?si=08up_trBmPONVF5V"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/success.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>How to Make Your Pictures Talk Using Free AI Apps</h4>
+            <small class="title">Success Amarachi</small><br>
+            <small class="title">322k views. 3 months ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div6">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/lyj1qEINmbc?si=9oMmiIXCbnNjsKAj"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/success.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>How Much YouTube & Facebook Paid Me in One Month as a Content Creator</h4>
+            <small class="title">Success Amarachi</small><br>
+            <small class="title">857 views. 3 months ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div7">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/Qk5ddiftAhg?si=wcYsCoBhqRduygKE"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/muslim.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>What Is the Role of a Scholar in Islam? — Duties, Responsibility & Trust</h4>
+            <small class="title">Muslim Pikin</small><br>
+            <small class="title">671 views. 4 days ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div8">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/d91jiOF4y_k?si=kOLCi71j0MGGDfvA"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/eobilo.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>Kiriji War: The Epic Conflict between the Ibadan Alliance& the Ekiti Parapo that</h4>
+            <small class="title">Edmund Obilo</small><br>
+            <small class="title">18k views. 3 months ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div9">
+        <div class="video-text">
+          <div class="video" style="padding: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/yztVrFenfV0?si=GI6qYtnsOwcB1Yqo"
+              title="Ogeere"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="v-details">
+            <div class="left-author-logo" style="flex:1"><p><img src="./images/aprokotv.jpg" alt=""></p></div>
+            <div class="right-video-details" style="flex:6"><h4>How to grow your hairline fast!</h4>
+            <small class="title">Aproko Doctor TV</small><br>
+            <small class="title">1M views. 4 months ago</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
